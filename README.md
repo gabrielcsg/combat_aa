@@ -2,7 +2,7 @@
 
 Combat Aedes Aegypti é um projeto da disciplina Top. Esp. em Banco de Dados.
 
-O projeto é o desenvolvimento de uma aplicação web para mapeamento de doenças provinientes do mosquito Aedes Aegypti, tais como: dengue, chikungunya e zika.
+O projeto é o desenvolvimento de uma aplicação web para mapeamento de doenças provenientes do mosquito Aedes Aegypti, tais como: dengue, chikungunya e zika.
 
 
 ## Requisitos
