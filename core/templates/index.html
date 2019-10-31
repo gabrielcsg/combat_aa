@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div class="container">
+        <br>
+        <div class="row justify-content-between">
+            <div class="col-4">Bem-Vindo</div>
+            <div class="col-4">
+                <a href="">Logout</a>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-2">
+                <a href="{% url 'url_cadastro_paciente' %}">Cadastrar Paciente</a>
+            </div>
+            <div class="col-2">
+                <a href="">Cadastrar PSF/UBS</a>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+                <div class="col-2">
+                    <a href="{% url 'url_listagem_paciente' %}">Listar Pacientes</a>
+                </div>
+                <div class="col-2">
+                    <a href="">Listar PSF/UBS</a>
+                </div>
+            </div>
+    </div>
+{% endblock %}
