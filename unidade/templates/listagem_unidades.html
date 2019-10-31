@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <br>
+    <div class="row justify-content-between">
+            <div class="col-4"><b>Unidades Cadastradas:</b></div>
+            <div class="col-4">
+                <a href="{% url 'home' %}">Voltar</a>
+            </div>
+    </div>
+    <br>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Endereço</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for unidade in unidades %}
+                <tr>
+                    <th scope="row">{{ unidade.nome }}</th>
+                    <td>{{ unidade.endereco }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
