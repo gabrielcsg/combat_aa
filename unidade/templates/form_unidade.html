@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <form method="post">
+        {% csrf_token %}
+        <br>
+        <h2>Cadastro de Unidade:</h2>
+        <br>
+
+        {{ form.as_p }}
+
+        <div class="row">
+            <div class='col-1'><button type="submit">Cadastrar</button></div>
+            <div class='col-1'><a href="{% url 'home' %}">Voltar</a></div>
+        </div>
+    </form>
+{% endblock %}
